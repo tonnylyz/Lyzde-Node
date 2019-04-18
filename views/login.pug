@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content="Yuanzhi LIANG / Tonny's personal website.")
+        meta(name='author', content='Yuanzhi LIANG')
+        title Lyzde - Login
+        link(href='https://unpkg.com/bootstrap@4.0.0/dist/css/bootstrap.min.css', rel='stylesheet')
+        link(href='/third/pnotify.custom.min.css', rel='stylesheet')
+        link(href='/css/login.css', rel='stylesheet')
+    body.text-center
+        form#login-form.form-signin
+            img.mb-4(src='/favicon.ico', alt='', width='36', height='36')
+            h1.h3.mb-3.font-weight-normal Admin Panel
+            input.form-control(name='username', type='text', placeholder='Username', maxlength='20', required='', autofocus='')
+            input.form-control(name='password', type='password', placeholder='Password', maxlength='20', required='')
+            button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
+            p.mt-5.mb-3.text-muted © 2018 Lyzde.
+        script(src='https://unpkg.com/jquery@3.3.1/dist/jquery.min.js')
+        script(src='/third/pnotify.custom.min.js')
+        script(src='/js/login.js')

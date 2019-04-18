@@ -1,0 +1,235 @@
+extends layout
+
+block content
+  #index-main.mx-auto.text-center
+    h1.display-4 TONNY
+    h4 Yuanzhi LIANG
+    p.lead A creative designer and programmer.
+    #home-menu.btn-group(role='group')
+      a.btn(href='/resume-yuanzhi-liang.pdf', target='_blank')
+        svg.feather.feather-paperclip(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+          path(d='M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48')
+        br
+        | Resume
+      a.btn(href='http://github.com/tonnylyz/', target='_blank')
+        svg.feather.feather-github(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+          path(d='M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22')
+        br
+        | Github
+      a.btn(href='blog')
+        svg.feather.feather-book-open(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+          path(d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z')
+          path(d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z')
+        br
+        | Blog
+    p.text-muted.mt-5
+      a#scroll-down(href='#')
+        | About ME
+        br
+        span(data-feather='arrow-down-circle')
+  .px-1.px-md-5.py-3.mx-auto(style='max-width: 60vw;')
+    h1.display-4.text-center Me
+    p.lead
+      | 梁远志，深圳中学2015届毕业生，目前就读于北京航空航天大学高等理工学院，主修计算机专业。
+      | 高中时创立了深圳中学学生活动中心网络组，同时也已经能够全栈开发Web应用。
+      | 进入大学后，对计算机系统的基础有了更多的了解，对于硬件软件系统设计能够将理论知识应用到实践上。
+      | 在机器学习尤其是神经网络方面也有着理论学习和不少的实践经历。
+      del 在业余生活上，是一只二次元宅。
+      | 立志成为一个有创新精神的设计师和程序员。
+  .container
+    h1.display-4.text-center Skills
+    h3.mt-3 Visual Design
+    .row
+      .col-md-6.p-2.pl-4
+        | 在高中阶段，因为参加较多社团活动的关系，掌握了许多媒体处理的技能：海报设计、音频处理、视频/后期制作。
+        | 在Web方面有着一般程序员的审美水平。
+        | 现在也尝试了另外一些姑且能算在视觉设计的东西，比如用数位板画画，3D建模和游戏制作。
+        | 这些作品日后有些长进之后再给大家看吧。
+      .col-md-6
+        strong Keywords
+        p
+          span.badge.badge-pill.badge-primary Photoshop
+          span.badge.badge-pill.badge-primary Premiere
+          span.badge.badge-pill.badge-primary After Effects
+          span.badge.badge-pill.badge-primary 3ds Max
+          span.badge.badge-pill.badge-primary Unity3D Engine
+        strong Work
+        ul
+          li
+            a(href='http://v.youku.com/v_show/id_XNTcwMzcwNDky.html', target='_blank') 深圳中学第26届“声呼吸”校园十大歌手比赛决赛宣传片
+    h3.mt-3 Computer Programming
+    .row
+      .col-md-6.p-2.pl-4
+        | 在大学阶段，系统理论学习了数据结构和算法设计分析，具有良好的编程技能。
+        | 如果单独说到计算机编程的话，就只能说什么语言了。
+        | 从最开始的UI工作MFC窗体程序的制作，到后来的Web应用的开发，接触的语言可以说是五花八门。如此多的开发经验，
+        | 使得有着很广的知识面，也并不愿意将自身局限于已经掌握的领域的开发工作，乐于尝试新事物。
+      .col-md-6
+        strong Keywords
+        p
+          span.badge.badge-pill.badge-primary C#
+          span.badge.badge-pill.badge-primary HTML/CSS/JS
+          span.badge.badge-pill.badge-primary C
+          span.badge.badge-pill.badge-primary C++
+          span.badge.badge-pill.badge-primary Java
+          span.badge.badge-pill.badge-primary Python
+          span.badge.badge-pill.badge-primary SQL
+        strong Work
+        ul
+          li
+            a(href='https://github.com/tonnylyz/Dispatch-Algorithm', target='_blank') 送餐派遣算法（课程项目）
+    h3.mt-3 Hardware System
+    .row
+      .col-md-6.p-2.pl-4
+        | 作为计算机组成原理课程项目的一部分，从零开始实现了一个流水线设计的MIPS微系统。
+        | 在理论知识上，对计算机的硬件体系结构有着很深的理解，有着很好的知识基础；
+        | 在实践上，能够使用Verilog HDL进行较大型的硬件设计，并使用FPGA板载烧录运行了处理器微系统。
+      .col-md-6
+        strong Keywords
+        p
+          span.badge.badge-pill.badge-primary CPU
+          span.badge.badge-pill.badge-primary Verilog HDL
+          span.badge.badge-pill.badge-primary MIPS Architecture
+          span.badge.badge-pill.badge-primary FPGA
+        strong Work
+        ul
+          li
+            a(href='https://github.com/tonnylyz/MIPS-CPU', target='_blank') MIPS处理器设计（仿真）
+          li
+            a(href='https://github.com/tonnylyz/MIPS-CPU-FPGA', target='_blank') MIPS微系统设计（FPGA）
+    h3.mt-3 Operating System
+    .row
+      .col-md-6.p-2.pl-4
+        | 操作系统是计算机最底层的软件，透过操作系统课程设计的内核实现实验，对操作系统的理论知识和实现细节上有较为深刻的理解。
+        | 课程项目主要使用MIT的JOS操作系统源码，在完成课程的MIPS版本后，将这一微型操作系统内核移植到了Aarch64架构的树莓派3B上。
+        | 因为这点，成为了下一届的操作系统课程设计的助教。
+      .col-md-6
+        strong Keywords
+        p
+          span.badge.badge-pill.badge-primary Kernel
+          span.badge.badge-pill.badge-primary OS Port
+          span.badge.badge-pill.badge-primary Raspberry Pi
+          span.badge.badge-pill.badge-primary ARMv8(Aarch64)
+          span.badge.badge-pill.badge-primary Bare-metal
+        strong Work
+        ul
+          li
+            a(href='https://github.com/tonnylyz/Raspberry-Pi-3-JOS', target='_blank') 树莓派3B的JOS移植
+    h3.mt-3 Database System
+    .row
+      .col-md-6.p-2.pl-4
+        | 学习了科学的数据库系统设计理论后，以规范化的方式（需求分析、到基于E-R法概念模式设计、逻辑模式设计……）完成了一个简易的数据库系统/Web应用。
+        | 在数据库方面能够熟练的设计关系模式，完成复杂的查询，此外也了解尝试了触发器和存储过程以及事务特性。
+        | 在日常的开发中，最常用的是微软的SQL Server，MySQL和PostgreSQL也有涉及。
+      .col-md-6
+        strong Keywords
+        p
+          span.badge.badge-pill.badge-primary DBS
+          span.badge.badge-pill.badge-primary Linux/ASP.NET Core/SQL Server/C#
+          span.badge.badge-pill.badge-primary DB Trigger
+          span.badge.badge-pill.badge-primary DB Transaction
+          span.badge.badge-pill.badge-primary DB Storage Procedure
+        strong Work
+        ul
+          li
+            a(href='https://github.com/tonnylyz/COLP-DataBase-Project', target='_blank') COLP（课程项目）
+    h3.mt-3 Compiler Design
+    .row
+      .col-md-6.p-2.pl-4
+        | 编译器的地位也是十分重要的，通过课程掌握了编译的原理以及其在计算机系统的作用，也了解了许多文法相关的知识，在理论上学习了各种自动的词法文法生成程序的方法。
+        | 作为课程设计，这只是一个自顶向下的递归子程序方法的C0编译器，在优化上实现了消除公共子表达式和数据流分析，同时也针对目标体系结构MIPS做了一些优化。
+      .col-md-6
+        strong Keywords
+        p
+          span.badge.badge-pill.badge-primary Compiler
+          span.badge.badge-pill.badge-primary C0 Syntax
+          span.badge.badge-pill.badge-primary MIPS Assembly Targeted
+          span.badge.badge-pill.badge-primary Common subexpression elimination(CSE)
+          span.badge.badge-pill.badge-primary Data-flow analysis
+        strong Work
+        ul
+          li
+            a(href='https://github.com/tonnylyz/TCC', target='_blank') Tonny's C0 Compiler
+    h3.mt-3 Machine Learning
+    .row
+      .col-md-6.p-2.pl-4
+        | 通过课程在理论上学习了机器学习的基本原理，通过课外的比赛如CCF数据挖掘竞赛、Kaggle社区竞赛，了解了各种机器学习/神经网络的框架。
+        | 在一般的结构化数据预测上，使用了XGBoost进行预测；
+        | 在图像识别相关的问题上，用Keras框架进行了迁移学习，了解了神经网络的训练和预测调优过程。
+      .col-md-6
+        strong Keywords
+        p
+          span.badge.badge-pill.badge-primary Neural Network
+          span.badge.badge-pill.badge-primary Keras
+          span.badge.badge-pill.badge-primary XGBoost
+          span.badge.badge-pill.badge-primary TensorFlow
+          span.badge.badge-pill.badge-primary Image Classification
+          span.badge.badge-pill.badge-primary Image Point Prediction
+        strong Work
+        ul
+          li 無い
+    h3.mt-3 Web Fullstack
+    .row
+      .col-md-6.p-2.pl-4
+        | 作为一个Web全栈工程师，不仅要能够从零开始实现一整个网站（包括数据库设计、Web后端和Web前端），还要能乐于接受新事物。
+        | 虽然最为熟悉的是微软的Asp.Net架构，也对Angular/NodeJs等新兴的技术有过一些实践，能够学习新东西总是好的。
+        | 曾领导开发过许多网站，如CAS班级网站、SAAO学活工作网站等，也接触了微信公众号、企业号的Web应用整合。
+      .col-md-6
+        strong Keywords
+        p
+          span.badge.badge-pill.badge-primary WeChat integration
+          span.badge.badge-pill.badge-primary NodeJs
+          span.badge.badge-pill.badge-primary Asp.NET Core (MVC)
+          span.badge.badge-pill.badge-primary Angular
+        strong Work
+        ul
+          li
+            a(href='https://github.com/tonnylyz/CAS', target='_blank') CAS（班级网站）
+          li
+            a(href='https://xuehuo.shenzhong.net/work', target='_blank') SAAO
+          li
+            a(href='https://github.com/Xuehuo/SAA-Online', target='_blank') SAAO (Source Code)
+          li
+            a(href='https://forms.ms', target='_blank') FORMS
+    h3.mt-3 Other Experiences
+    p.text-center
+      span.badge.badge-light Minecraft Plugin Development @@ FORMS
+      span.badge.badge-light 3rd Place Team @@ BUAA Cyber Security CTF
+      a.badge.badge-light(href='https://github.com/tonnylyz/WiFi-Login-Helper', target='_blank') Wifi Login Helper Android App
+      a.badge.badge-light(href='https://github.com/tonnylyz/Wifi-Login-Helper-Windows', target='_blank') Wifi Login Helper Windows WPF App
+    h1.display-4.text-center.mt-5.mb-5 Friends
+    .row.text-center.justify-content-md-center
+      .col-md-4
+        .card.text-white.bg-dark
+          img.card-img-top(src='/img/liby.png', alt='Liby.me')
+          .card-body
+            a.btn.btn-light.btn-block(href='https://liby.me', target='_blank') Liby.me
+      .col-md-4
+        img.card-img-top(src='/img/enddle.png', alt='Enddle.me')
+        .card.text-white.bg-dark
+          .card-body
+            a.btn.btn-light.btn-block(href='http://enddle.me', target='_blank') Enddle.me
+    h1.display-4.text-center.mt-5.mb-5 Contacts
+    .card-group.justify-content-md-center
+      .card.text-white.bg-dark(style='max-width: 24rem;')
+        .card-body
+          h5.card-title Yuanzhi LIANG / Tonny
+          dl.card-text.row
+            dt.col-sm-4 Email
+            dd.col-sm-8 bHl6dG9ubnlAZ21haWwuY29t
+            dt.col-sm-4 Telegram
+            dd.col-sm-8 dG9ubnlseXo=
+        .card-footer
+          small.text-muted Sensitive information is Base64 Encoded
+      .card.text-white.bg-dark(style='max-width: 24rem;')
+        .card-body
+          h5.card-title 梁远志
+          dl.card-text.row
+            dt.col-sm-4 Email
+            dd.col-sm-8 dG9ubnlseXpAcXEuY29t
+            dt.col-sm-4 Phone
+            dd.col-sm-8 Kzg2IDEzMzE2ODE0MzY4
+            dt.col-sm-4 WeChat
+            dd.col-sm-8 dG9ubnlseXo=
+        .card-footer
+          small.text-muted 敏感信息经Base64编码

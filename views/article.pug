@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    main(role='main')
+        .jumbotron
+            .container
+                h1#blog-title.display-3=article.title
+                p#blog-description=article.description
+                p#blog-tag
+                each tag in article.tag_list
+                    if tag !== ''
+                        span.badge.badge-pill.badge-dark=tag
+        .container
+            .row
+                .col-md-8
+                    #blog-content.p-2!=article.rendered_markdown
+                .col-md-4
+                    a.btn.btn-info.btn-block(href='/blog') Article List
+                    dl.row.mt-3
+                        dt.col-sm-3 Datetime
+                        dd#blog-datetime.col-sm-9=article.datetime

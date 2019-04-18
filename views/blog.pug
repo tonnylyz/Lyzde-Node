@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .container
+        #blog-list-container.mt-4
+            each post in post_list
+                a.card.post-item.mt-4(href='/post/' + post.id, data-id=post.id)
+                    .card-body
+                        h5.card-title=post.title
+                        h6.card-subtitle.mb-2.text-muted=post.datetime
+                        p.card-text=post.description
+                    .card-footer
+                        small.text-muted
+                            each tag in post.tag_list
+                                if tag !== ''
+                                    span.badge.badge-pill.badge-secondary.mr-1=tag

@@ -1,0 +1,63 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content="Yuanzhi LIANG / Tonny's personal website.")
+        meta(name='author', content='Yuanzhi LIANG')
+        title Lyzde - Admin
+        link(href='https://unpkg.com/bootstrap@4.0.0/dist/css/bootstrap.min.css', rel='stylesheet')
+        link(href='/third/pnotify.custom.min.css', rel='stylesheet')
+        link(href='/css/admin.css', rel='stylesheet')
+    body
+        nav.navbar.navbar-dark.sticky-top.bg-dark.flex-md-nowrap.p-0
+            a.navbar-brand.col-sm-3.col-md-2.mr-0(href='#')
+                span(data-feather='hash')
+                |  LYZDE Admin Panel
+            ul.navbar-nav.px-3
+                li.nav-item.text-nowrap
+                    a.nav-link(href='#', onclick='log_out()')
+                        span(data-feather='log-out')
+                        |  Log out
+        .container-fluid
+            .row
+                nav.col-md-2.d-none.d-md-block.bg-light.sidebar
+                    .sidebar-sticky
+                        ul#admin-menu.nav.flex-column
+                            li.nav-item
+                                a.nav-link(href='#', data-section='article')
+                                    span(data-feather='file-text')
+                                    |                             Article
+                .col-md-9.ml-sm-auto.col-lg-10.pt-3.px-4(role='main')
+                    .row
+                        .col-md-2.full-height
+                            button#article-main-button.btn.btn-info.btn-block(onclick='article_amb()') New
+                            ul#admin-article-list.list-group.list-group-flush.mt-1(style='opacity: 0; transition: opacity 0.2s ease-in-out;')
+                        .col-md-5
+                            form#article-form
+                                input(type='hidden', value='-1', name='id')
+                                .form-row
+                                    .col
+                                        input.form-control(type='text', placeholder='Title', name='title')
+                                    .col
+                                        input.form-control(type='datetime', placeholder='Datetime', name='datetime')
+                                .form-row.mt-2
+                                    .col-sm-2
+                                        input.form-control(type='number', placeholder='View Count', name='viewCount')
+                                    .col-sm-10
+                                        input.form-control(type='text', placeholder='Tag', name='tag')
+                                .form-row.mt-2
+                                    .col-sm-9
+                                        input.form-control(type='text', placeholder='Description', name='description')
+                                    .col-sm-3
+                                        button.btn.btn-primary.btn-block(type='submit') Submit
+                                .form-group.mt-2
+                                    textarea#article-editor.form-control(type='text', onkeyup='article_live_preview()', onblur='article_live_preview()', placeholder='Content', name='content')
+                        #admin-article-preview.col-md-5.full-height
+                            h1.text-muted.text-center Live Preview
+        script(src='https://unpkg.com/jquery@3.3.1/dist/jquery.min.js')
+        script(src='https://unpkg.com/feather-icons@4.5.0/dist/feather.js')
+        script(src='https://unpkg.com/moment@2.20.1/min/moment.min.js')
+        script(src='https://unpkg.com/showdown@1.8.6/dist/showdown.min.js')
+        script(src='/third/pnotify.custom.min.js')
+        script(src='/js/admin.js')
